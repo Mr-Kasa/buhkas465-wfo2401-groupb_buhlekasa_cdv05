@@ -1,29 +1,22 @@
 import React from "react";
-import ToggleSwitch from "./theme";
 import ThemeSelector from "./theme";
 
-
-export default function Header(){
-
-return(
-<>
-  <header className="header">
-    <div>
-       <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHI3bmx6cXYwYzlrNW1wZmd5aW95aGF4bnEybHJpdGx1ZDBjazZhNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o72EXSWcDayDDGP60/giphy.webp" 
-       className="webstieIcon" />
-    </div>
-    <div>
-       
-            <button>About Me</button>
-            <button>My Best Projects</button>
-            <button>Contact Me</button>
-    </div>
-    <div>
-    <form>
-        <ThemeSelector></ThemeSelector>
-    </form>
-    </div>
-  </header>
-</>
-)
+export default function Header() {
+  return (
+    <header className="header">
+      <div >
+        <img className="logoImg" src="https://t4.ftcdn.net/jpg/01/13/99/57/360_F_113995750_dAEGvjqxnsYD6asKjeDWJoVoSqjFvdGO.jpg" />
+      </div>
+      <div className="link-buttons">
+        <button className="linkButton">About Me</button>
+        <button className="linkButton">My Best Projects</button>
+        <button className="linkButton">Contact Me</button>
+      </div>
+      <div>
+        <form className="navForm">
+          <ThemeSelector></ThemeSelector>
+        </form>
+      </div>
+    </header>
+  );
 }
