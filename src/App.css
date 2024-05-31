@@ -112,3 +112,65 @@ button.active {
   padding: 1em;
   border-radius: 5px;
 }
+ @media (min-width:760px){
+  .header{
+    min-width: fit-content;
+  }
+  .logoImg {
+    width: 60%;
+  }
+
+  .linkButton{
+    min-width: fit-content;
+    font-size:large;
+  
+  }
+  .link-buttons{
+    min-width: fit-content;
+    display:flex;
+    flex-direction: row;
+    margin:0 1rem;
+  }
+  .bodyContainer{
+    min-width: fit-content;
+  }
+ }
+
+ @media (min-width:1020px){
+  .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+   
+  }
+  .logoImg{
+    grid-column: 1;
+    min-width: 150%;
+  }
+  .link-buttons{
+    grid-column: 2,4;
+    padding-left: 10em;
+  }
+  .navForm{
+    grid-column: 4;
+    margin:1rem;
+  }
+  .themeButton{
+    margin-top: 0;
+    margin-left: 30em;
+  }
+ }
+@media (min-width:1440px){
+
+}
+ @media (min-width:2000px){
+  .themeButton{
+    margin-top: 0;
+    margin-left: 60em;
+  }
+  .link-buttons{
+    padding-left: 50em;
+  }
+}
+
+
+/* ******************* End of Header styling********************** */
