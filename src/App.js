@@ -3,6 +3,7 @@ import React from "react"
 import Header from './components/Header';
 import Footer from './components/footer';
 import AboutMe from './components/AboutMe';
+import MyWork from './components/MyWork';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <body className='bodyContainer'>
    <Header></Header>
    <AboutMe></AboutMe>
+   <MyWork></MyWork>
    <Footer></Footer>
    </body>
     
