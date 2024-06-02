@@ -2,6 +2,7 @@ import './App.css';
 import React from "react"
 import Header from './components/Header';
 import Footer from './components/footer';
+import AboutMe from './components/AboutMe';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
  
     <body className='bodyContainer'>
    <Header></Header>
+   <AboutMe></AboutMe>
    <Footer></Footer>
    </body>
     

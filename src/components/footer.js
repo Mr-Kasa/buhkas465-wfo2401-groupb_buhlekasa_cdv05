@@ -3,7 +3,11 @@ import React from "react";
 export default function Footer(){
     return(
         <footer className="Footer">
-        <p className="CopyRight">©Buhle Kasa</p>
+        <div className="cvLink">
+           <a rel="noopener noreferrer" target="_blank" href="https://docs.google.com/document/d/1Q551KzCNID7u0sabwh8M92p3-rIqmmtw2MuJQmSBspw/edit?usp=sharing">Link to my CV<br></br>
+            
+            </a> 
+        </div>
         <div className="FooterLinks">
             <a className="footerIcon"  href="https://github.com/Mr-Kasa" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-github"></i>
@@ -21,12 +25,8 @@ export default function Footer(){
                 <i className="fa fa-whatsapp"></i>
             </a>
         </div>
-        <div className="cvLink">
-           <a rel="noopener noreferrer" target="_blank" href="https://docs.google.com/document/d/1Q551KzCNID7u0sabwh8M92p3-rIqmmtw2MuJQmSBspw/edit?usp=sharing">Link to my CV<br></br>
-            
-            </a> 
-        </div>
        
+        <p className="CopyRight">©Buhle Kasa</p>
     </footer>
     )
 } 
