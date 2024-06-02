@@ -1,12 +1,11 @@
 import React from "react";
 import ThemeSelector from "./theme";
+import logoImg from "./myPhoto.jpg"
 
 export default function Header() {
   return (
     <header className="header">
-  
-        <img className="logoImg" src="https://t4.ftcdn.net/jpg/01/13/99/57/360_F_113995750_dAEGvjqxnsYD6asKjeDWJoVoSqjFvdGO.jpg" />
-     
+        <img className="logoImg" src={logoImg}/>
       <div className="link-buttons">
         <button className="linkButton">About Me</button>
         <button className="linkButton">My Best Projects</button>
