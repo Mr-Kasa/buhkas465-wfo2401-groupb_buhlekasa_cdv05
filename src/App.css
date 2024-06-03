@@ -26,7 +26,6 @@ body {
 .themeButton {
   position: relative;
   display: inline-block;
-  
   border-radius: 5px;
 }
 
@@ -44,12 +43,14 @@ body {
 
 .themeOptions {
   margin: 2px;
-  padding: 2px;
+  padding: 5px;
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: linear-gradient(90deg, rgba(249,249,247,1) 65%, rgba(36,37,37,1) 100%); 
+
 }
 
 .themeButton:hover .themeOptions {
@@ -66,14 +67,13 @@ button.active {
   display:flex;
   flex-direction: column;
   justify-content: center;
-  min-width: fit-content;
   padding-bottom:0;
   background: rgb(34,193,195);
   background: linear-gradient(0deg, rgba(34,193,195,1) 21%, rgba(45,253,120,1) 100%);
 }
 
 .header {
-  min-width: fit-content;
+
   margin: 1em 0.5em;
   padding: 1em;
   display: flex;
@@ -114,70 +114,40 @@ button.active {
   padding: 1em;
   border-radius: 5px;
 }
- @media (min-width:760px){
-  .header{
-    min-width: fit-content;
-  }
+ @media (min-width:720px){
   .logoImg {
     width: 60%;
   }
 
   .linkButton{
-    min-width: fit-content;
     font-size:large;
   
   }
   .link-buttons{
-    min-width: fit-content;
     display:flex;
     flex-direction: row;
     margin:0 1rem;
   }
-  .bodyContainer{
-    min-width: fit-content;
-  }
+
  }
 
  @media (min-width:1020px){
   .header{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    display: flex;
+    flex-direction: row;
+    
+  
    
   }
   .logoImg{
-    grid-column: 1;
-    min-width: 150%;
+    max-width: 40%;
   }
-  .link-buttons{
-    grid-column: 2,4;
-    padding-left: 10em;
-  }
-  .navForm{
-    grid-column: 4;
-    margin:1rem;
-  }
+ 
   .themeButton{
-    margin-top: 0;
-    margin-left: 30em;
+   width:200%
   }
  }
-@media (min-width:1435px){
-.link-buttons{
-  margin-left: 40em;
-}
-.themeButton{
-  margin-left: 60em;
-}
-}
- @media (min-width:2000px){
-  .themeButton{
-    margin-top: 0;
-    margin-left: 60em;
-  }
-  .link-buttons{
-    padding-left: 50em;
-  }
-}
+
 
 
 /* ******************* End of Header styling********************** */
@@ -238,15 +208,17 @@ button.active {
 
 /*********************************Beginning of My work styling****************************** */
 .MyWork{
+  margin-top:10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  max-width: 100%;
   color: rgb(56, 56, 56);
   background: rgb(34,193,195);
   background: linear-gradient(0deg, rgba(34,193,195,1) 21%, rgba(45,253,120,1) 100%);
- 
+
 }
 .cardContainer{
   display: grid;
@@ -256,16 +228,22 @@ button.active {
 
 }
 .cardImg{
-  min-width: 100%;
-  
+  width: 100%;
+  box-shadow:rgb(241, 207, 12) 0.3em 0.2em 1em 0.2em;
+  border-radius: 20px;
 }
 .card{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin:2rem;
-  box-shadow: grey 8px 12px 6px;
+  box-shadow: rgb(87, 131, 109) 4px 5px 6px 8px;
+  border: #2c2c2c 50px;
   margin: 5rem;
-  border-radius: 15px;
-  background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgb(152, 195, 34) 21%, rgba(45,253,120,1) 100%);
+  border-radius: 15px ;
+  padding: 1em;
+  max-width: 50%;
 }
 .cardText{
   display: flex;
@@ -278,6 +256,7 @@ button.active {
 
 @media (min-width: 720px){
 .cardContainer{
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -287,6 +266,7 @@ button.active {
 @media (min-width: 1020px){
   
   .cardContainer{
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
   }

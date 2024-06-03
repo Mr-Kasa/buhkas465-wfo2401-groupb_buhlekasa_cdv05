@@ -4,7 +4,7 @@ export default function Footer(){
     return(
         <footer className="Footer">
         <div className="cvLink">
-           <a rel="noopener noreferrer" target="_blank" href="https://docs.google.com/document/d/1Q551KzCNID7u0sabwh8M92p3-rIqmmtw2MuJQmSBspw/edit?usp=sharing">Link to my CV<br></br>
+           <a rel="noopener noreferrer" target="_blank" href="https://docs.google.com/document/d/1CikU1Ff3RjwRHqjkYkfQn7wzDXTfMyfmsLlfmpgv-2o/edit?usp=sharing">Link to my CV<br></br>
             
             </a> 
         </div>
