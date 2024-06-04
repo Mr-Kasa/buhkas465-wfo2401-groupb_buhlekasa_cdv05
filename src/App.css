@@ -68,6 +68,7 @@ button.active {
   flex-direction: column;
   justify-content: center;
   padding-bottom:0;
+  margin-right: 0;
   background: rgb(34,193,195);
   background: linear-gradient(0deg, rgba(34,193,195,1) 21%, rgba(45,253,120,1) 100%);
 }
@@ -116,7 +117,8 @@ button.active {
 }
  @media (min-width:720px){
   .logoImg {
-    width: 60%;
+    width: 20rem;
+    height: 20rem;
   }
 
   .linkButton{
@@ -140,7 +142,8 @@ button.active {
    
   }
   .logoImg{
-    max-width: 40%;
+    justify-self: left;
+
   }
  
   .themeButton{
