@@ -244,6 +244,7 @@ button.active {
   border-radius: 15px ;
   padding: 1em;
   max-width: 50%;
+  background-color: transparent;
 }
 .cardText{
   display: flex;

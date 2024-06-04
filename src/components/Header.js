@@ -1,6 +1,6 @@
 import React from "react";
 import ThemeSelector from "./theme";
-import logoImg from "./myPhoto.jpg"
+import logoImg from "./images/myPhoto.jpg"
 
 export default function Header() {
   return (
