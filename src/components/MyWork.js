@@ -18,7 +18,7 @@ export default function MyWork() {
               Discover our highly interactive Task Manager App, built with HTML,
               JavaScript, and CSS. It features a sleek design and intuitive
               interface for managing your tasks efficiently. Enjoy customizable
-              task lists, drag-and-drop functionality, and theme persistence via
+              task lists and theme persistence via
               local storage, ensuring a personalized and seamless experience
               every time.
             </p>
