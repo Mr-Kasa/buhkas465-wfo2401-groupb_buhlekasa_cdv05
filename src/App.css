@@ -286,3 +286,10 @@ button.active {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+
+.contactInfo{
+  font-weight: 700;
+  font-size: larger;
+  color:crimson;
+}

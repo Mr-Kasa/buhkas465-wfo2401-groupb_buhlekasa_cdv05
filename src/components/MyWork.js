@@ -83,6 +83,10 @@ export default function MyWork() {
         </div>
       </div>
       <h3> For more of my projects visit my Github account.</h3>
+      <div>
+        <h5>Contact me<br/> Cell:  <span className="contactInfo">0796916824</span></h5><br/>
+        <h5>Email: <span className="contactInfo">Buhlekasa101@gmail.com</span></h5>
+      </div>
     </div>
   );
 }
