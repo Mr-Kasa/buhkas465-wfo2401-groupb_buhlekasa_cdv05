@@ -36,12 +36,12 @@ export default function MyWork() {
   }, []);
 
   return (
-    <div id="Mywork" className="MyWork">
+    <div className="MyWork">
       <h1>MY WORK</h1>
       <div className="cardContainer">
         <div className="card">
           <div>
-            <img className="cardImg" src={taskManager} />
+            <img className="cardImg" src={taskManager} alt="Task Manager App" />
           </div>
           <div className="cardText">
             <h4>Task manager app</h4>
@@ -55,7 +55,7 @@ export default function MyWork() {
         </div>
         <div className="card">
           <div>
-            <img className="cardImg" src={bookApp} />
+            <img className="cardImg" src={bookApp} alt="Book App" />
           </div>
           <div className="cardText">
             <h4>Book App</h4>
@@ -69,7 +69,7 @@ export default function MyWork() {
         </div>
         <div className="card">
           <div>
-            <img className="cardImg" src={podcastApp} />
+            <img className="cardImg" src={podcastApp} alt="Podcast App" />
           </div>
           <div className="cardText">
             <h4>Podcast App</h4>

@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function AboutMe(){
-   return (
-      <div className="aboutMe" id="About-Me">
-          <h1 className="AboutMeMainHeading">About Me</h1>
-          <p>Hello! I'm a 25-year-old Front-End Web Developer with a passion for coding and a keen interest in creating beautiful, user-friendly web experiences. My primary focus is on building interactive and responsive user interfaces using technologies like React, JavaScript, HTML, CSS, Tailwind CSS, Git, GitHub, and ChatGPT.</p>
-  
+export default function AboutMe() {
+  return (
+    <div className="aboutMe">
+      <h1 className="AboutMeMainHeading">About Me</h1>
+      <p>Hello! I'm a 25-year-old Front-End Web Developer with a passion for coding and a keen interest in creating beautiful, user-friendly web experiences. My primary focus is on building interactive and responsive user interfaces using technologies like React, JavaScript, HTML, CSS, Tailwind CSS, Git, GitHub, and ChatGPT.</p>
+      
           <h4>Skills and Expertise</h4>
           <p>
               <strong>React:</strong> Proficient in creating dynamic and responsive web applications using React.<br />
