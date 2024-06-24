@@ -3,10 +3,10 @@ import taskManager from "./images/agileBoard.png";
 import bookApp from "./images/bookApp.png";
 import podcastApp from './images/PodcastApp.png';
 
+
 export default function MyWork() {
   useEffect(() => {
-    const cardContainer = document.querySelector('.cardContainer');
-    const cards = document.querySelectorAll('.card');
+    const cardContainers = document.querySelectorAll('.cardContainer');
 
     function isInViewport(element) {
       const rect = element.getBoundingClientRect();
@@ -19,12 +19,18 @@ export default function MyWork() {
     }
 
     function checkViewport() {
-      if (isInViewport(cardContainer)) {
-        cards.forEach(card => {
-          card.classList.add('visible');
-        });
-        window.removeEventListener('scroll', checkViewport);
-      }
+      cardContainers.forEach(cardContainer => {
+        if (isInViewport(cardContainer)) {
+          const cards = cardContainer.querySelectorAll('.card');
+          cards.forEach((card, index) => {
+            setTimeout(() => {
+              card.classList.add('visible');
+            }, index * 200); // Adjust timing for staggered animation
+          });
+          // Remove event listener once cards are visible
+          window.removeEventListener('scroll', checkViewport);
+        }
+      });
     }
 
     window.addEventListener('scroll', checkViewport);

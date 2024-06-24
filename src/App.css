@@ -3,6 +3,9 @@
   --text-color: black;
   --button-background: linear-gradient(90deg, rgba(249,249,247,1) 65%, rgba(36,37,37,1) 100%);
   --button-background-active: rgba(0, 123, 255, 0.5);
+  margin:0;
+  right: 0;
+  left: 0;
 }
 
 .light {
@@ -156,17 +159,6 @@ button.active {
 /* ******************* End of Header styling********************** */
 
 
-/* *************************Beggining of About Me Styling********************************/
-.aboutMe{
-    color:rgb(61, 60, 60);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding:1em;
-}
-/********************** end of About me sttyling  **********************************/
 
 /* ****************Footer Styling******************************** */
 
@@ -221,13 +213,16 @@ button.active {
   color: rgb(56, 56, 56);
   background: rgb(34, 193, 195);
   background: linear-gradient(0deg, rgba(34, 193, 195, 1) 21%, rgba(45, 253, 120, 1) 100%);
+  padding: 2rem 1rem; /* Adjust padding as needed */
 }
 
 .cardContainer {
   display: grid;
   grid-template-columns: 1;
-  background: rgb(34, 193, 195);
-  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 21%, rgba(45, 253, 120, 1) 100%);
+  gap: 2rem; /* Adjust gap between cards */
+  max-width: 100%;
+  width: 90%; /* Adjust width as needed */
+  margin: 0 auto;
 }
 
 .cardImg {
@@ -243,53 +238,40 @@ button.active {
   align-items: center;
   margin: 2rem;
   box-shadow: rgb(87, 131, 109) 4px 5px 6px 8px;
-  border: #2c2c2c 50px;
-  margin: 5rem;
   border-radius: 15px;
   padding: 1em;
-  max-width: 50%;
-  background-color: transparent;
   opacity: 0;
-  transform: translateX(-100%);
-  transition: all 0.5s ease-out;
+  transform: translateY(50%);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .card:nth-child(even) {
-  transform: translateX(100%);
+  transform: translateY(-50%);
 }
 
 .card.visible {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 .cardText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+}
+
+.contactInfo {
+  font-weight: 700;
+  font-size: larger;
+  color: crimson;
 }
 
 @media (min-width: 720px) {
   .cardContainer {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1020px) {
   .cardContainer {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
-}
-
-
-.contactInfo{
-  font-weight: 700;
-  font-size: larger;
-  color:crimson;
 }
