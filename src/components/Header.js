@@ -8,7 +8,7 @@ export default function Header() {
         <img className="logoImg" src={logoImg}/>
       <div className="link-buttons">
         <button className="linkButton">About Me</button>
-        <button className="linkButton">My Best Projects</button>
+        <button className="linkButton" href='MyWork'>My Best Projects</button>
         <button className="linkButton">Contact Me</button>
       </div>
       <div>

@@ -210,8 +210,8 @@ button.active {
 
 
 /*********************************Beginning of My work styling****************************** */
-.MyWork{
-  margin-top:10rem;
+.MyWork {
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -219,59 +219,70 @@ button.active {
   text-align: center;
   max-width: 100%;
   color: rgb(56, 56, 56);
-  background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 21%, rgba(45,253,120,1) 100%);
-
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 21%, rgba(45, 253, 120, 1) 100%);
 }
-.cardContainer{
+
+.cardContainer {
   display: grid;
   grid-template-columns: 1;
-  background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 21%, rgba(45,253,120,1) 100%); 
-
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 21%, rgba(45, 253, 120, 1) 100%);
 }
-.cardImg{
+
+.cardImg {
   width: 100%;
-  box-shadow:rgb(241, 207, 12) 0.3em 0.2em 1em 0.2em;
+  box-shadow: rgb(241, 207, 12) 0.3em 0.2em 1em 0.2em;
   border-radius: 20px;
 }
-.card{
-  display:flex;
+
+.card {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin:2rem;
+  margin: 2rem;
   box-shadow: rgb(87, 131, 109) 4px 5px 6px 8px;
   border: #2c2c2c 50px;
   margin: 5rem;
-  border-radius: 15px ;
+  border-radius: 15px;
   padding: 1em;
   max-width: 50%;
   background-color: transparent;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease-out;
 }
-.cardText{
+
+.card:nth-child(even) {
+  transform: translateX(100%);
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.cardText {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  
 }
 
-@media (min-width: 720px){
-.cardContainer{
+@media (min-width: 720px) {
+  .cardContainer {
     max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
 }
 
-@media (min-width: 1020px){
-  
-  .cardContainer{
+@media (min-width: 1020px) {
+  .cardContainer {
     max-width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
