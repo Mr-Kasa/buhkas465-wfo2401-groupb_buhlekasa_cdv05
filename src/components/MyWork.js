@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import taskManager from "./images/agileBoard.png";
 import bookApp from "./images/bookApp.png";
 import podcastApp from './images/PodcastApp.png';
+import VanLife from './images/vanLife.png'
 
 export default function MyWork() {
   useEffect(() => {
@@ -60,6 +61,21 @@ export default function MyWork() {
         </div>
         <div className="card">
           <div>
+            <img className="cardImg" src={VanLife} alt="Task Manager App" />
+          </div>
+          <div className="cardText">
+            <h4>Van Life online-store</h4>
+            <p>
+            Welcome to my Van Life website, which demonstrates my expertise in React and React Router. This single-page application (SPA) features seamless navigation without page refreshes, user validation, and enhanced user accessibility. Additionally, it preserves page state when switching between pages.
+            </p>
+          </div>
+          <a href="https://vanlifebuhkas.netlify.app/" target="_blank" rel="noopener noreferrer">
+            Visit my site here
+          </a>
+        </div>
+
+        <div className="card">
+          <div>
             <img className="cardImg" src={bookApp} alt="Book App" />
           </div>
           <div className="cardText">
@@ -91,6 +107,9 @@ export default function MyWork() {
       <div>
         <h5>Contact me <br/> Cell:  <span className="contactInfo">0796916824</span></h5><br/>
         <h5>Email: <span className="contactInfo">Buhlekasa101@gmail.com</span></h5>
+        <br/>
+        <br/>
+                <small>Feel free to contact me for the source codes</small>
       </div>
     </div>
   );
