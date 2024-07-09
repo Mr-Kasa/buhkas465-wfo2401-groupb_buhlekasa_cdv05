@@ -3,7 +3,6 @@ import taskManager from "./images/agileBoard.png";
 import bookApp from "./images/bookApp.png";
 import podcastApp from './images/PodcastApp.png';
 
-
 export default function MyWork() {
   useEffect(() => {
     const cardContainers = document.querySelectorAll('.cardContainer');
@@ -20,24 +19,24 @@ export default function MyWork() {
 
     function checkViewport() {
       cardContainers.forEach(cardContainer => {
-        if (isInViewport(cardContainer)) {
-          const cards = cardContainer.querySelectorAll('.card');
-          cards.forEach((card, index) => {
+        const cards = cardContainer.querySelectorAll('.card');
+        cards.forEach((card, index) => {
+          if (isInViewport(card)) {
             setTimeout(() => {
               card.classList.add('visible');
-            }, index * 200); // Adjust timing for staggered animation
-          });
-          // Remove event listener once cards are visible
-          window.removeEventListener('scroll', checkViewport);
-        }
+            }, index * 200);
+          }
+        });
       });
     }
 
     window.addEventListener('scroll', checkViewport);
+    window.addEventListener('resize', checkViewport); 
     checkViewport();
 
     return () => {
       window.removeEventListener('scroll', checkViewport);
+      window.removeEventListener('resize', checkViewport); 
     };
   }, []);
 
@@ -88,11 +87,12 @@ export default function MyWork() {
           </a>
         </div>
       </div>
-      <h3> For more of my projects visit my Github account.</h3>
+      <h3>For more of my projects visit my <a href="https://github.com/Mr-Kasa">Github</a> account.</h3>
       <div>
-        <h5>Contact me<br/> Cell:  <span className="contactInfo">0796916824</span></h5><br/>
+        <h5>Contact me <br/> Cell:  <span className="contactInfo">0796916824</span></h5><br/>
         <h5>Email: <span className="contactInfo">Buhlekasa101@gmail.com</span></h5>
       </div>
     </div>
   );
 }
+
